@@ -1,0 +1,122 @@
+/* set semua elemen ke default padding 0 margin 0
+agar tidak jarak */
+*{
+    padding: 0;
+    margin: 0;
+    /* set font menjadi poppins */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* set splide slide gambar agar full panjang 
+dan tingginya menyesuaikan */
+#banner .splide__slide img {
+    width: 100%;
+    height: auto;
+}
+
+.ssso{
+    /* opacity: 0; */
+    transition: all .3s ease;
+}
+
+.card-image:hover .ssso{
+    opacity: 1;
+}
+
+/* set container padding ke 15px kanan kiri 
+agar ada jakark */
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* set block agar keluar */
+.nav-menu.open{
+    display: block;
+}
+
+/* set arrow slide ke background gelap dan arrow berwarna putih */
+.splide__arrow svg {
+    fill: #fff;
+    height: 2rem;
+    background-color: #000;
+    width: 2rem;
+    padding: 8px;
+    border-radius: 33px;
+}
+
+/* set class modal opacity 0 z-index ke 30 agar selalu diatas dan set transisinya 0.3 detik */
+.modal{
+    z-index: 30;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+/* untuk memberika delay animasi pada kotak modal dan gambar produkk modal */
+.modal .delay-modal{
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all .3s ease;
+}
+
+/* untuk ketika open modal, modall keluar */
+.modal.open{
+    z-index: 30;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* agar delay modal keluar dengan opacity 1 */
+.modal.open .delay-modal{
+    opacity: 1;
+    transform: none;
+    transition-delay: .1s;
+}
+
+/* setting custom height dan width pada card produk */
+.card-image{
+    width: 293px;
+    max-width: 293px;
+}
+
+/* set overlay background ke gelap */
+.overlay{
+    background-color: rgba(0, 0, 0, .7);
+}
+
+/* set modal image ke 600px */
+#modal-image{
+    height: 600px !important;
+}
+
+.wrapper{
+    transition: all .3s ease;
+    height: 10px;
+    overflow: hidden;
+    /* visibility: hidden; */
+}
+
+/* set elemen produk agar tersembunyi */
+.product-list, .service-list{
+    visibility: hidden;
+}
+
+/* set untuk modal keluar ketika user klik produk atau service */
+.product-list.open,
+.service-list.open{
+    visibility: visible;
+}
+
+/* set transisi untuk modal dan foto  */
+.product-list .flex.flex-wrap.justify-center,
+.service-list .flex.flex-wrap.justify-center{
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+/* set transisi untuk modal dan foto menjadi opacity 1*/
+.product-list.open .flex.flex-wrap.justify-center,
+.service-list.open .flex.flex-wrap.justify-center{
+    opacity: 1;
+}
