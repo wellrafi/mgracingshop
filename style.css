@@ -15,12 +15,14 @@ dan tingginya menyesuaikan */
 }
 
 .ssso{
-    /* opacity: 0; */
+    opacity: 0;
     transition: all .3s ease;
+    transform: translateY(5px);
 }
 
 .card-image:hover .ssso{
     opacity: 1;
+    transform: none;
 }
 
 /* set container padding ke 15px kanan kiri 
@@ -112,11 +114,23 @@ agar ada jakark */
 .product-list .flex.flex-wrap.justify-center,
 .service-list .flex.flex-wrap.justify-center{
     opacity: 0;
-    transition: all .3s ease;
+    transition: all .5s ease;
 }
 
 /* set transisi untuk modal dan foto menjadi opacity 1*/
 .product-list.open .flex.flex-wrap.justify-center,
 .service-list.open .flex.flex-wrap.justify-center{
     opacity: 1;
+}
+
+.splide__pagination{
+    margin-bottom: -50px;
+}
+
+/* ganti warna pagination */
+.splide__pagination__page{
+    background-color: white !important;
+}
+.splide__pagination__page.is-active{
+    background-color: black !important;
 }

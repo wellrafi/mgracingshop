@@ -64,10 +64,10 @@
                 menggunakan justify-between -->
             <div class="flex justify-between">
                 <!-- div elemen logo -->
-                <div class="logo" data-aos="fade-down">
+                <a class="logo" href="#banner" data-aos="fade-down">
                     <!-- tag untuk memasukan logo -->
                     <img src="./assets/logo.png" alt="">
-                </div>
+                </a>
 
                 <div class="toggle xl:hidden block cursor-pointer" data-aos="fade-down">
                     <svg class="absolute right-5 menu-open" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="30" height="30" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path d="M480 224H32c-17.673 0-32 14.327-32 32s14.327 32 32 32h448c17.673 0 32-14.327 32-32s-14.327-32-32-32zM32 138.667h448c17.673 0 32-14.327 32-32s-14.327-32-32-32H32c-17.673 0-32 14.327-32 32s14.327 32 32 32zM480 373.333H32c-17.673 0-32 14.327-32 32s14.327 32 32 32h448c17.673 0 32-14.327 32-32s-14.327-32-32-32z" fill="#ffffff" data-original="#000000"></path></g></svg>
@@ -86,7 +86,7 @@
                         <a href="#product" data-aos="fade-down" class="nav-menu-item text-slate-300 font-bold text-xl ease-out duration-300 transition-all hover:text-white">Product</a>
                         <a href="#bestseller" data-aos="fade-down" class="nav-menu-item text-slate-300 font-bold text-xl ease-out duration-300 transition-all hover:text-white">Best Seller</a>
                         <a href="#testimonial" data-aos="fade-down" class="nav-menu-item text-slate-300 font-bold text-xl ease-out duration-300 transition-all hover:text-white">Testimoni</a>
-                        <a href="#contactus" data-aos="fade-down" class="block lg-hidden nav-menu-item text-slate-300 font-bold text-xl ease-out duration-300 transition-all hover:text-white">Contact</a>
+                        <a href="#contactus" data-aos="fade-down" class="md:hidden block lg-hidden nav-menu-item text-slate-300 font-bold text-xl ease-out duration-300 transition-all hover:text-white">Contact</a>
                     </div>
                 </div>
 
@@ -99,9 +99,9 @@
     </header>
 
     <!-- tag banner untuk membungkus banner dengan set padding top 40 satuan tailwind -->
-    <section id="banner" class="md:pt-24 pt-26">
+    <section id="banner" class="md:pt-36 pt-32 md:pb-12 pb-10">
         <!-- elemen untuk set container maksimal panjang elemen dan m-auto agar elemen berada di tengah -->
-        <div class="m-auto ">
+        <div class="m-auto container">
             <!-- element pembungkus untuk slide image menggunakan plugin splide.js -->
             <div id="image-carousel" class="splide" aria-label="Beautiful Images">
                 <div class="splide__track">
@@ -124,7 +124,7 @@
     </section>
 
     <!-- element pemgbungkus untuk about us dengan warna gray dan py-10 untuk set padding atas dan bawah -->
-    <section id="aboutus" class="py-12 md:mb-20 bg-neutral-300 h-screen">
+    <section id="aboutus" class="md:py-0 py-20 md:mb-20 bg-neutral-300 min-h-screen flex items-center">
         <!-- elemen untuk set container maksimal panjang elemen dan m-auto agar elemen berada di tengah -->
         <div class="container m-auto h-full">
             <!-- memisahkan elemen about us menjadi dua dengan flex dan merenggangka gambar ke kiri dan detail text ke kanan
@@ -151,7 +151,7 @@
     </section>
 
     <!-- elemen pembungkus product -->
-    <section id="product" class="pt-14 pb-14 my-20">
+    <section id="product" class="md:pt-32 pt-14 pb-14 my-20">
         <!-- container untuk set maksimal width pada elemen dari default tailwind dan menggunakan m-auto agar elemen berada di tengah -->
         <div class="container m-auto h-full">
             <!-- title product dengan font tebal dan margin 8 satuan tailwind-->
@@ -165,7 +165,7 @@
                     <!-- set bg ke gray dan rounded-full agar elemen menjadi bulat  -->
                     <div class="border-round bg-neutral-300 p-12 rounded-full" data-aos="fade-up">
                         <!-- set image product dan setting height dan width menjadi 100 -->
-                        <img src="./assets/product.png" alt="" height="100" width="100" >
+                        <img src="./assets/product.png" alt="" height="70" width="70" >
                     </div>
                     <!-- subtitle produk -->
                     <div class="text-2xl font-bold text-center mt-5" data-aos="fade-up">Product</div>
@@ -176,7 +176,7 @@
                     <!-- set bg ke gray dan rounded-full agar elemen menjadi bulat  -->
                     <div class="border-round bg-neutral-300 p-12 rounded-full" data-aos="fade-up">
                         <!-- set image product dan setting height dan width menjadi 100 -->
-                        <img src="./assets/service.png" alt="" height="100" width="100">
+                        <img src="./assets/service.png" alt="" height="70" width="70">
                     </div>
                     <!-- subtitle service -->
                     <div class="text-2xl font-bold text-center mt-5" data-aos="fade-up">Service</div>
@@ -725,9 +725,9 @@
     </section>
 
     <!-- elemen untuk banner promotoion -->
-    <section class="">
+    <section class="md:py-24 py-10">
         <!-- set max width dengan container dan mx auto agar elemen berada ditentah -->
-        <div class="text-center">
+        <div class="container mx-auto" data-aos="zoom-in">
             <!-- meng set foto promosi -->
             <img src="./assets/promo.png" class="w-full" alt="">
         </div>
@@ -737,7 +737,7 @@
     <section id="testimonial" class="py-36 bg-neutral-300 mb-20">
         <!-- elemen untuk set container maksimal panjang elemen dan m-auto agar elemen berada di tengah -->
         <div class="container m-auto">
-            <div class="text-4xl text-center pb-10 font-bold"  data-aos="fade-up" >Testimonial</div>
+            <div class="text-4xl text-center pb-10 font-bold" data-aos="fade-up" >Testimonial</div>
             <!-- element pembungkus untuk slide image menggunakan plugin splide.js -->
             <div id="image-" class="splide" aria-label="Beautiful Images">
                 <div class="splide__track">
@@ -766,7 +766,7 @@
                             <div class="flex flex-col justify-center items-center pt-10">
                                 <img src="./assets/star.png" class="m-auto" alt="" data-aos="fade-up" >
                                 <div class="text-xl font-bold text-center mt-4" data-aos="fade-up" >Good Service! Very clean recomended!</div>
-                                <div class="text-xl font-normal text-center leading-6 mt-4" data-aos="fade-up" >Thanks bro min for your superb service as always, <br>
+                                <div class="text-xl font-normal text-center leading-10 mt-4 max-w-4xl" data-aos="fade-up" >Thanks bro min for your superb service as always, <br>
                                     And also thanks all the crew MG Racing Shop for the great work!</div>
                                 <img data-aos="fade-up"  src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200" width="100" class="mt-16 rounded-full" alt="">
                                 <div data-aos="fade-up"  class="text-md text-center mt-4">Jokowow - Customer</div>
@@ -776,7 +776,7 @@
                             <div class="flex flex-col justify-center items-center pt-10">
                                 <img src="./assets/star2.png" class="m-auto" alt="" data-aos="fade-up" >
                                 <div class="text-xl font-bold text-center mt-4" data-aos="fade-up" >Satisfied</div>
-                                <div class="text-xl font-normal text-center leading-6 mt-4" data-aos="fade-up" >The installation process was very smooth and fast, yet the attention to details were astonishing by the mechanics. I still have many project in the future and I’ll trust MG Racing Shop to execute it :)</div>
+                                <div class="text-xl font-normal text-center leading-10 mt-4 max-w-4xl" data-aos="fade-up" >The installation process was very smooth and fast, yet the attention to details were astonishing by the mechanics. I still have many project in the future and I’ll trust MG Racing Shop to execute it :)</div>
                                 <img data-aos="fade-up"  src="./assets/profile2.png" width="100" class="mt-16 rounded-full" alt="">
                                 <div data-aos="fade-up"  class="text-md text-center mt-4">Putra Sinde - Customer</div>
                             </div>        
@@ -785,7 +785,7 @@
                             <div class="flex flex-col justify-center items-center pt-10">
                                 <img src="./assets/star3.png" class="m-auto" alt="" data-aos="fade-up" >
                                 <div class="text-xl font-bold text-center mt-4" data-aos="fade-up" >Very Very Recomended!</div>
-                                <div class="text-xl font-normal text-center leading-6 mt-4" data-aos="fade-up" >Thanks bro min for your superb service as always,
+                                <div class="text-xl font-normal text-center leading-10 mt-4 max-w-4xl" data-aos="fade-up" >Thanks bro min for your superb service as always,
                                     And also thanks all the crew MG Racing Shop for the great work!</div>
                                 <img data-aos="fade-up"  src="./assets/profile3.png" width="100" class="mt-16 rounded-full" alt="">
                                 <div data-aos="fade-up"  class="text-md text-center mt-4">Aceng - Customer</div>
@@ -800,71 +800,75 @@
     <!-- contact us  -->
     <section id="contactus" class="py-20">
         <div class="container mx-auto">
-            <div class="text-4xl text-center pb-10 font-bold" data-aos="fade-up" >Contact Us</div>
+            <div class="text-4xl text-center pb-14 font-bold" data-aos="fade-up" >Contact Us</div>
             <div class="xl:flex flex-none flex-wrap">
-                <div class="xl:w-2/4 mb-5 w-full" data-aos="fade-up"    >
-                    <div class="drop-shadow-2xl bg-white rounded-lg md:p-10 p-5 md:mx-4 mx-0 h-full ">
-                        <img src="./assets/pin.png" class="m-auto mb-4" alt="" data-aos="fade-up" >
-                        <div class="text-xl font-bold text-center mb-2" data-aos="fade-up" >Our Address</div>
-                        <div class="text-xl text-center leading-8" data-aos="fade-up" >Jalan Rukun No.79 Potorono RT05, Potorono, <br> Banguntapan, Bantul, Yogyakarta 55196</div>
+                
+                <div class="xl:w-2/4 mb-5 w-full" data-aos="fade-up">
+                    <div class="drop-shadow-2xl bg-white rounded-lg h-full flex flex-col">
+                        <div class="md:p-10 p-5 md:mx-4 mx-0 ">
+                            <img src="./assets/pin.png" class="m-auto mb-4" alt="" data-aos="fade-up" >
+                            <div class="text-base font-bold text-center mb-2" data-aos="fade-up" >Our Address</div>
+                            <div class="text-base text-center leading-8" data-aos="fade-up" >Jalan Rukun No.79 Potorono RT05, Potorono, Banguntapan, Bantul, Yogyakarta 55196</div>
+                        </div>
+                        <div class="h-full">
+                            <iframe class="" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Jl. Potorono No.Rt 02, Salakan, Potorono, Kec. Banguntapan, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55196&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                        </div>
                     </div>
                 </div>
-                <div class="xl:w-1/4 mb-5 w-full" data-aos="fade-up" >
-                    <div class="drop-shadow-2xl bg-white rounded-lg md:p-10 p-5 md:mx-4 mx-0 h-full ">
-                        <img src="./assets/mail.png" class="m-auto mb-4" alt="" data-aos="fade-up" >
-                        <div class="text-xl font-bold text-center mb-2" data-aos="fade-up" >Email Us</div>
-                        <div class="text-xl text-center leading-8" data-aos="fade-up" >mgracingshop @gmail.com</div>
-                    </div>
-                </div>
-                <div class="xl:w-1/4 mb-5 w-full">
-                    <div class="drop-shadow-2xl bg-white rounded-lg md:p-10 p-5 md:mx-4 mx-0 h-full" data-aos="fade-up" >
-                        <img src="./assets/phone.png" class="m-auto mb-4" alt="" data-aos="fade-up" >
-                        <div class="text-xl font-bold text-center mb-2" data-aos="fade-up" >Contact Us</div>
-                        <div class="text-xl text-center leading-8" data-aos="fade-up" >+62 813-9239-8466 <br>+62 8953-6603-7884</div>
-                    </div>
-                </div>
-                <div class="xl:w-2/4 mb-5 w-full" data-aos="fade-up" >
-                    <div class="drop-shadow-2xl bg-white rounded-lg md:mx-4 mx-0 h-full">
-                        <iframe class="rounded-xl" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Jl. Potorono No.Rt 02, Salakan, Potorono, Kec. Banguntapan, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55196&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-                        <!-- <img src="./assets/map.png" class="drop-shadow-2xl bg-white rounded-lg p-0 w-full h-full object-cover" alt="" data-aos="fade-up" > -->
-                    </div>
-                </div>
-                <div class="xl:w-2/4 mb-5 w-full">
-                    <div class="drop-shadow-2xl bg-white rounded-lg md:p-10 p-5 md:mx-4 mx-0 h-full " data-aos="fade-up" >
-                        <form action="" class="mt-5" data-aos="fade-up" >
-                            <div class="flex flex-wrap">
-                                <div class="md:w-1/2 w-full">
-                                    <div class="m-1">
-                                        <input type="text" class="border border-slate-300 px-4 py-3 w-full" placeholder="Nama lengkap">
-                                    </div>
-                                </div>
-                                <div class="md:w-1/2 w-full">
-                                    <div class="m-1">
-                                        <input type="text" class="border border-slate-300 px-4 py-3 w-full" placeholder="Email">
-                                    </div>
-                                </div>
-                                <div class="w-full">
-                                    <div class="m-1">
-                                        <input type="text" class="border border-slate-300 px-4 py-3 w-full" placeholder="Subject">
-                                    </div>
-                                </div>
-                                <div class="w-full">
-                                    <div class="m-1">
-                                        <textarea type="text" class="border border-slate-300 px-4 py-3 w-full h-40" placeholder="Pesan"></textarea>
-                                    </div>
-                                </div>
-                                <div class="w-full mt-2 text-center m-1">
-                                    <button class="bg-neutral-300 text-xl rounded-2xl font-bold mx-auto text-center px-7 py-3">Send Message</button>
-                                </div>
+                <div class="xl:w-2/4 mb-5 w-full" data-aos="fade-up">
+                    <div class="xl:flex flex-none flex-wrap">
+                        <div class="xl:w-1/2 mb-5 w-full" data-aos="fade-up" >
+                            <div class="drop-shadow-2xl bg-white rounded-lg md:p-10 p-5 md:mx-4 mx-0 h-full ">
+                                <img src="./assets/mail.png" class="m-auto mb-4" alt="" data-aos="fade-up" >
+                                <div class="text-base font-bold text-center mb-2" data-aos="fade-up" >Email Us</div>
+                                <div class="text-base text-center leading-8" data-aos="fade-up" >mgracingshop @gmail.com</div>
                             </div>
-                        </form>
+                        </div>
+                        <div class="xl:w-1/2 mb-5 w-full">
+                            <div class="drop-shadow-2xl bg-white rounded-lg md:p-10 p-5 md:mx-4 mx-0 h-full" data-aos="fade-up" >
+                                <img src="./assets/phone.png" class="m-auto mb-4" alt="" data-aos="fade-up" >
+                                <div class="text-base font-bold text-center mb-2" data-aos="fade-up" >Contact Us</div>
+                                <div class="text-base text-center leading-8" data-aos="fade-up" >+62 813-9239-8466 <br>+62 8953-6603-7884</div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="drop-shadow-2xl bg-white rounded-lg md:p-10 p-5 md:mx-4 mx-0 h-full " data-aos="fade-up" >
+                                <form action="" class="mt-5" data-aos="fade-up" >
+                                    <div class="flex flex-wrap">
+                                        <div class="md:w-1/2 w-full">
+                                            <div class="m-1">
+                                                <input type="text" class="border border-slate-300 px-4 py-3 w-full" placeholder="Nama lengkap">
+                                            </div>
+                                        </div>
+                                        <div class="md:w-1/2 w-full">
+                                            <div class="m-1">
+                                                <input type="text" class="border border-slate-300 px-4 py-3 w-full" placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="w-full">
+                                            <div class="m-1">
+                                                <input type="text" class="border border-slate-300 px-4 py-3 w-full" placeholder="Subject">
+                                            </div>
+                                        </div>
+                                        <div class="w-full">
+                                            <div class="m-1">
+                                                <textarea type="text" class="border border-slate-300 px-4 py-3 w-full h-40" placeholder="Pesan"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="w-full mt-2 text-center m-1">
+                                            <button class="bg-neutral-300 text-xl rounded-2xl font-bold mx-auto text-center px-7 py-3">Send Message</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-20 bg-black">
+    <footer class="py-20 bg-black overflow-hidden">
         <div class="2xl:max-w-screen-lg xl:max-w-screen-md lg:max-w-screen-md md:max-w-screen-md max-w-screen-sm px-5 m-auto">
             <div class="flex justify-between md:flex-row md:flex-row flex-col md:gap-0 gap-10 ">
                 <div class="md:w-1/5 w-full" data-aos="fade-up" >

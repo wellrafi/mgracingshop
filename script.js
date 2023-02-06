@@ -69,7 +69,7 @@ $(document).ready(function(){
             // jquery function pada tag html body
             $('html, body').animate({
                 // set posisi dimana section
-                scrollTop: ($(attr).offset().top - 110)
+                scrollTop: ($(attr).offset().top - 40)
                 // durasi animation scroll
             }, 500);
         }
