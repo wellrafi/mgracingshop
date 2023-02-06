@@ -14,6 +14,12 @@ dan tingginya menyesuaikan */
     height: auto;
 }
 
+/* button contact hover */
+a.dds:hover{
+    background-color: white !important;
+    color: #000;
+}
+
 .ssso{
     opacity: 0;
     transition: all .3s ease;
