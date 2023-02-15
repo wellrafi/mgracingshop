@@ -5,20 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./assets/favicon/manifest.json">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -38,7 +25,7 @@
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://metatags.io/">
-    <meta property="twitter:title" content="MNLS GANK — MG Racing Shop">
+    <meta property="twitter:title" content="MMNLS GANK — MG Racing Shop">
     <meta property="twitter:description" content="MG Racing Shop adalah usaha penjualan barang dibidang otomotif terutama roda dua. Berdiri sejak September 2020, kami memiliki fokus usaha menyediakan jasa, serta penjualan spareparts dan aksesoris sepeda motor untuk memfasilitasi penggiat otomotif dalam mengapresiasikan ide dan kreatifitas. Memberikan pelayanan maupun parts terbaik kepada setiap customer merupakan suatu keutamaan bagi kami.">
     <meta property="twitter:image" content="./assets/meta-banner.png">
 
@@ -57,16 +44,16 @@
 <body>
     <!-- tag untuk header dan menggunakan fixed agar elemen tetap diatas dan w-full agar panjang 100% dan py-10
         untuk padding atas dan bawah dengan satuan ukur tailwind -->
-    <header class="bg-black fixed w-full md:py-10 py-7 z-30 top-0 left-0">
+    <header class="bg-black fixed w-full h-24 flex items-center z-10">
         <!-- membungkus logo dan navigation sekaligus set maksimal panjang  -->
         <div class="container m-auto relative">
             <!-- memisahkan elemen logo dan nav dengan flex dan merenggangka logo ke kiri dan navigation ke kanan
                 menggunakan justify-between -->
-            <div class="flex justify-between">
+            <div class="flex justify-between items-center">
                 <!-- div elemen logo -->
                 <a class="logo" href="#banner" data-aos="fade-down">
                     <!-- tag untuk memasukan logo -->
-                    <img src="./assets/logo.png" alt="">
+                    <img src="./assets/logo.png" height="70" width="70" alt="">
                 </a>
 
                 <div class="toggle xl:hidden block cursor-pointer" data-aos="fade-down">
@@ -76,7 +63,7 @@
 
                 <!-- elemen pembungkus list menu navigation, dan menggunakan display flex untuk
                     membuat list menu vertical -->
-                <div class="nav-menu xl:block hidden flex gap-10 xl:relative xl:w-auto w-full fixed xl:flex-row flex-col bg-black xl:top-0 top-20 left-0">
+                <div class="nav-menu xl:block hidden flex justify-center gap-10 xl:relative xl:w-auto w-full fixed xl:flex-row flex-col bg-black xl:top-0 top-20 left-0">
                     <!-- navigation menu berupa link pada halaman  
                         text-slate-300 ini untuk set color font ke agak abu2, font-bold supaya textnya tebal, ease-out itu jenis timing untuk transition,
                         duration-300 itu untuk durasi transitionya selama 0.3 detik, hover:text-white ketika di hover color font berubah jadi putih
@@ -86,20 +73,22 @@
                         <a href="#product" data-aos="fade-down" class="nav-menu-item text-slate-300 font-bold text-xl ease-out duration-300 transition-all hover:text-white">Product</a>
                         <a href="#bestseller" data-aos="fade-down" class="nav-menu-item text-slate-300 font-bold text-xl ease-out duration-300 transition-all hover:text-white">Best Seller</a>
                         <a href="#testimonial" data-aos="fade-down" class="nav-menu-item text-slate-300 font-bold text-xl ease-out duration-300 transition-all hover:text-white">Testimoni</a>
-                        <a href="#contactus" data-aos="fade-down" class="md:hidden block lg-hidden nav-menu-item text-slate-300 font-bold text-xl ease-out duration-300 transition-all hover:text-white">Contact</a>
+                        <a href="#contactus" data-aos="fade-down" class="md:hidden block lg-hidden nav-menu-item text-slate-300 font-bold text-xl ease-out duration-300 transition-all hover:text-white">Contact us</a>
                     </div>
                 </div>
 
                 <div data-aos="fade-down" class="xl:block hidden">
-                    <a href="#contactus" class="nav-menu-item dds text-white px-5 rounded-xl py-2 bg-neutral-700 font-bold text-xl ease-out duration-300 transition-all hover:text-white">Contact</a>
+                    <a href="#contactus" class="nav-menu-item dds px-5 rounded-xl py-2 bg-neutral-700 font-bold text-xl ease-out duration-300 transition-all text-black">Contact us</a>
                 </div>
 
             </div>
         </div>
     </header>
 
+    <div class="h-24"></div>
+
     <!-- tag banner untuk membungkus banner dengan set padding top 40 satuan tailwind -->
-    <section id="banner" class="md:pt-36 pt-32 md:pb-12 pb-10">
+    <section id="banner" class="py-10">
         <!-- elemen untuk set container maksimal panjang elemen dan m-auto agar elemen berada di tengah -->
         <div class="m-auto container">
             <!-- element pembungkus untuk slide image menggunakan plugin splide.js -->
@@ -572,7 +561,7 @@
         <!-- set custom max width karena tidak bisa menyesuaikan container, m-auto agar elemen berada ditengah dan padding ukuran 5 -->
         <div class="max-w-6xl m-auto px-5">
             <!-- title section dengan font bold dan text berada di tengah -->
-            <div class="text-4xl font-bold mb-12 text-center" data-aos="fade-up">Top of Nine</div>
+            <div class="text-4xl font-bold mb-12 text-center" data-aos="fade-up">Best of Nine</div>
             <!-- set flex untuk menempatkan list card-->
             <div class="flex flex-wrap gap-6 justify-center">
                 <!-- card ini sama saja seperti yang ada pada product & service elemen diatas -->
@@ -725,7 +714,7 @@
     </section>
 
     <!-- elemen untuk banner promotoion -->
-    <section class="md:py-24 py-10">
+    <section class="md:py-20 py-10">
         <!-- set max width dengan container dan mx auto agar elemen berada ditentah -->
         <div class="container mx-auto" data-aos="zoom-in">
             <!-- meng set foto promosi -->
@@ -734,10 +723,10 @@
     </section>
 
     <!-- tag banner untuk membungkus banner dengan set padding top 40 satuan tailwind -->
-    <section id="testimonial" class="py-36 bg-neutral-300 mb-20">
+    <section id="testimonial" class="py-32 bg-neutral-300">
         <!-- elemen untuk set container maksimal panjang elemen dan m-auto agar elemen berada di tengah -->
         <div class="container m-auto">
-            <div class="text-4xl text-center pb-10 font-bold" data-aos="fade-up" >Testimonial</div>
+            <div class="text-4xl text-center pb-5 font-bold" data-aos="fade-up" >Testimonial</div>
             <!-- element pembungkus untuk slide image menggunakan plugin splide.js -->
             <div id="image-" class="splide" aria-label="Beautiful Images">
                 <div class="splide__track">
@@ -747,7 +736,7 @@
                         <li class="splide__slide" data-splide-interval="2000">
                             <!-- set flex untuk memudahkan penempatan elemen dengan di set justify-center dan items-center untuk elemen
                                 berada selalu ditengah dan padding atas bawah sebesar 10 -->
-                            <div class="flex flex-col justify-center items-center py-10">
+                            <div class="flex flex-col justify-center items-center py-7">
                                 <!-- set foto rating -->
                                 <img src="./assets/star.png" class="m-auto" alt=""  data-aos="fade-up" >
                                 <!-- title testimoni -->
@@ -763,7 +752,7 @@
                         </li>
                         <!-- elemen sama seperti item testimoni diatas -->
                         <li class="splide__slide" data-splide-interval="2000">
-                            <div class="flex flex-col justify-center items-center pt-10">
+                            <div class="flex flex-col justify-center items-center py-7">
                                 <img src="./assets/star.png" class="m-auto" alt="" data-aos="fade-up" >
                                 <div class="text-xl font-bold text-center mt-4" data-aos="fade-up" >Good Service! Very clean recomended!</div>
                                 <div class="text-xl font-normal text-center leading-8 mt-4 max-w-4xl" data-aos="fade-up" >Thanks bro min for your superb service as always, <br>
@@ -773,7 +762,7 @@
                             </div>        
                         </li>
                         <li class="splide__slide" data-splide-interval="2000">
-                            <div class="flex flex-col justify-center items-center pt-10">
+                            <div class="flex flex-col justify-center items-center py-7">
                                 <img src="./assets/star2.png" class="m-auto" alt="" data-aos="fade-up" >
                                 <div class="text-xl font-bold text-center mt-4" data-aos="fade-up" >Satisfied</div>
                                 <div class="text-xl font-normal text-center leading-8 mt-4 max-w-4xl" data-aos="fade-up" >The installation process was very smooth and fast, yet the attention to details were astonishing by the mechanics. I still have many project in the future and I’ll trust MG Racing Shop to execute it :)</div>
@@ -782,7 +771,7 @@
                             </div>        
                         </li>
                         <li class="splide__slide" data-splide-interval="2000">
-                            <div class="flex flex-col justify-center items-center pt-10">
+                            <div class="flex flex-col justify-center items-center py-7">
                                 <img src="./assets/star3.png" class="m-auto" alt="" data-aos="fade-up" >
                                 <div class="text-xl font-bold text-center mt-4" data-aos="fade-up" >Very Very Recomended!</div>
                                 <div class="text-xl font-normal text-center leading-8 mt-4 max-w-4xl" data-aos="fade-up" >Thanks bro min for your superb service as always,
@@ -798,20 +787,21 @@
     </section>
 
     <!-- contact us  -->
-    <section id="contactus" class="py-20">
+    <section id="contactus" class="py-20 pt-32">
         <div class="container mx-auto">
             <div class="text-4xl text-center pb-14 font-bold" data-aos="fade-up" >Contact Us</div>
             <div class="xl:flex flex-none flex-wrap">
                 
                 <div class="xl:w-2/4 mb-5 w-full" data-aos="fade-up">
-                    <div class="drop-shadow-2xl bg-white rounded-lg h-full flex flex-col">
+                    <div class="drop-shadow-2xl bg-white rounded-lg h-full flex flex-col justify-between">
                         <div class="md:p-10 p-5 md:mx-4 mx-0 ">
                             <img src="./assets/pin.png" class="m-auto mb-4" alt="" data-aos="fade-up" >
-                            <div class="text-base font-bold text-center mb-2" data-aos="fade-up" >Our Address</div>
-                            <div class="text-base text-center leading-8" data-aos="fade-up" >Jalan Rukun No.79 Potorono RT05, Potorono, Banguntapan, Bantul, Yogyakarta 55196</div>
+                            <div class="text-sm font-bold text-center mb-2" data-aos="fade-up" >Our Address</div>
+                            <div class="text-sm text-center leading-8" data-aos="fade-up" >Jalan Rukun No.79 Potorono RT05, Potorono, Banguntapan, Bantul, Yogyakarta 55196</div>
                         </div>
-                        <div class="h-full">
-                            <iframe class="" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Jl. Potorono No.Rt 02, Salakan, Potorono, Kec. Banguntapan, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55196&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                        <div class="h-full" style="height: 455px;"  data-aos="fade-up">
+                            <iframe 
+                                class="" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Jl. Potorono No.Rt 02, Salakan, Potorono, Kec. Banguntapan, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55196&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                         </div>
                     </div>
                 </div>
@@ -820,15 +810,15 @@
                         <div class="xl:w-1/2 mb-5 w-full" data-aos="fade-up" >
                             <div class="drop-shadow-2xl bg-white rounded-lg md:p-10 p-5 md:mx-4 mx-0 h-full ">
                                 <img src="./assets/mail.png" class="m-auto mb-4" alt="" data-aos="fade-up" >
-                                <div class="text-base font-bold text-center mb-2" data-aos="fade-up" >Email Us</div>
-                                <div class="text-base text-center leading-8" data-aos="fade-up" >mgracingshop @gmail.com</div>
+                                <div class="text-sm font-bold text-center mb-2" data-aos="fade-up" >Email Us</div>
+                                <div class="text-sm text-center leading-8" data-aos="fade-up" >mgracingshop@gmail.com</div>
                             </div>
                         </div>
                         <div class="xl:w-1/2 mb-5 w-full">
                             <div class="drop-shadow-2xl bg-white rounded-lg md:p-10 p-5 md:mx-4 mx-0 h-full" data-aos="fade-up" >
                                 <img src="./assets/phone.png" class="m-auto mb-4" alt="" data-aos="fade-up" >
-                                <div class="text-base font-bold text-center mb-2" data-aos="fade-up" >Contact Us</div>
-                                <div class="text-base text-center leading-8" data-aos="fade-up" >+62 813-9239-8466 <br>+62 8953-6603-7884</div>
+                                <div class="text-sm font-bold text-center mb-2" data-aos="fade-up" >Contact Us</div>
+                                <div class="text-sm text-center leading-8" data-aos="fade-up" >+62 813-9239-8466 <br>+62 8953-6603-7884</div>
                             </div>
                         </div>
                         <div class="">
@@ -871,26 +861,26 @@
     <footer class="py-20 bg-black overflow-hidden">
         <div class="2xl:max-w-screen-lg xl:max-w-screen-md lg:max-w-screen-md md:max-w-screen-md max-w-screen-sm px-5 m-auto">
             <div class="flex justify-between md:flex-row md:flex-row flex-col md:gap-0 gap-10 ">
-                <div class="md:w-1/5 w-full" data-aos="fade-up" >
+                <div class="md:w-3/12 w-full" data-aos="fade-up" >
                     <div class="text-xl text-white font-bold mb-2" data-aos="fade-up" >Working Hours</div>
                     <div class="text-white" data-aos="fade-up" >Senin - Sabtu <br>09.30 - 16.00</div>
                 </div>
-                <div class="md:w-1/5 w-full" data-aos="fade-up" >
+                <div class="md:w-3/12 w-full" data-aos="fade-up" >
                     <div class="text-xl text-white font-bold mb-2" data-aos="fade-up" >E-Commerce</div>
                     <div class="flex">
                         <a href="https://www.tokopedia.com/minimalis-gank" class="mr-3 mt-2" data-aos="fade-up" ><img src="./assets/tokpd1.png" alt=""></a>
                         <a href="https://shopee.co.id/minimalis_gank" class="mr-3 mt-2" data-aos="fade-up" ><img src="./assets/shope1.png" alt=""></a>
                     </div>
                 </div>
-                <div class="md:w-1/5 w-full" data-aos="fade-up" >
+                <div class="md:w-3/12 w-full" data-aos="fade-up" >
                     <div class="text-xl text-white font-bold mb-2" data-aos="fade-up" >Social Media</div>
                     <div class="flex">
                         <a href="https://www.instagram.com/mg_racingshop/" class="mr-3 mt-2" data-aos="fade-up" ><img src="./assets/ig1.png" alt=""></a>
                         <a href="" class="mr-3 mt-2" data-aos="fade-up" ><img src="./assets/tiktok1.png" alt=""></a>
                     </div>
                 </div>
-                <div class="md:w-2/5 w-full flex items-center md:justify-end justify-start" data-aos="fade-up" >
-                    <img src="./assets/foot-logo.png" alt="" class="" height="40" data-aos="fade-up" >
+                <div class="md:w-2/12 w-full flex items-center md:justify-end justify-start" data-aos="fade-up" >
+                    <img src="./assets/logo.png" alt="" class="" height="70" width="70" data-aos="fade-up" >
                 </div>
             </div>
         </div>
@@ -937,7 +927,7 @@
         </div>
     </div>
 
-    <div class="wa fixed bottom-8 right-8">
+    <div class="wa fixed bottom-8 right-8 drop-shadow-xl">
         <div class="p-5 bg-white fixed bottom-28 right-8 rounded-2xl hidden wwa drop-shadow-xl">
             <div class="flex gap-4 p-3 rounded-lg bg-slate-100 mb-4">
                 <div class="font-bold">Admin 1</div>
@@ -972,6 +962,11 @@
             autoplay: true,
             pauseOnHover: true
         }).mount();
+
+        let samt = 0;
+            window.addEventListener('scroll', function() {
+            samt <= 10 ? samt++ : AOS.refresh();
+        });
     </script>
 </body>
 </html>
